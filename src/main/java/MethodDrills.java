@@ -55,13 +55,21 @@ public class MethodDrills {
         firstNumber = 5;
         secondNumber = 6;
 
-        if (firstNumber != secondNumber){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return firstNumber != secondNumber;
+//        if (firstNumber != secondNumber){
+//            return true;
+//        }
+//        else{
+//            return false;
+//        }
     }
 
+    public int returnAnumber(int numberInput){
+        return numberInput;
+    }
+
+    public int returnNumberProvidedByParameter(int numberInput){
+        return numberInput;
+    }
 
 }

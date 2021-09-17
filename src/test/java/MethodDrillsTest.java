@@ -95,4 +95,25 @@ class MethodDrillsTest {
 
         assertEquals(test,results,"This should be true.");
     }
+
+    @Test
+    void returnAnumber() {
+        int numberInputTest = 5;
+
+        int test = numberInputTest;
+        int result = methodDrills.returnAnumber(numberInputTest);
+
+        assertEquals(test,result, "These should return a number.");
+    }
+
+
+    @Test
+    void returnNumberProvidedByParameter() {
+        int numberInputTest = 5;
+
+        int test = numberInputTest;
+        int result = methodDrills.returnNumberProvidedByParameter(numberInputTest);
+
+        assertEquals(test,result, "These should both equal five.");
+    }
 }
