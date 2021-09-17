@@ -32,16 +32,16 @@ public class MethodDrills {
         return true;
     }
 
-    private char singleLetter(){
+    public char singleLetter(){
         char single = 'c';
         return single;
     }
 
-    private String numberToSentence(int numberInput){
+    public String numberToSentence(int numberInput){
         return "" + numberInput;
     }
 
-    private String tellMeAString(String firstSentence, String secondSentence){
+    public String tellMeAString(String firstSentence, String secondSentence){
 
         firstSentence = "This it the first string I'm returning.";
         secondSentence = "This string is going to be connected to the first string.";
@@ -49,7 +49,7 @@ public class MethodDrills {
         return firstSentence + " " + secondSentence;
     }
 
-    private boolean checkForTruth(String firstSentence, int firstNumber, int secondNumber){
+    public boolean checkForTruth(String firstSentence, int firstNumber, int secondNumber){
 
         firstSentence = "That's not right ";
         firstNumber = 5;

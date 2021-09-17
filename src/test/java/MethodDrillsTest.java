@@ -39,5 +39,60 @@ class MethodDrillsTest {
         Assert.assertArrayEquals(numberArrayTest,result);
     }
 
+    @Test
+    void sentence() {
+        String test = "This is just to write a public method";
+        String result = methodDrills.sentence();
 
+        assertEquals((Object) test,result, "Should equal each other");
+    }
+
+    @Test
+    void trueOrFalse() {
+        boolean test = true;
+        boolean result = methodDrills.trueOrFalse();
+
+        assertEquals(test, result, "These should both be true.");
+    }
+
+
+    @Test
+    void singleLetter() {
+        char test ='c';
+        char result = methodDrills.singleLetter();
+
+        assertEquals(test, result, "Should both be c");
+    }
+
+    @Test
+    void numberToSentence() {
+        String test = "" + 5;
+        String results = methodDrills.numberToSentence(5);
+
+        assertEquals((Object)test, results, "Should be the same");
+    }
+
+    @Test
+    void tellMeAString() {
+        String firstSentenceTest = "This it the first string I'm returning.";
+        String secondSentenceTest = "This string is going to be connected to the first string.";
+
+        String test = firstSentenceTest + " " + secondSentenceTest;
+        String result = methodDrills.tellMeAString(firstSentenceTest,secondSentenceTest);
+
+        assertEquals((Object) test,result,"They should match.");
+
+    }
+
+    @Test
+    void checkForTruth() {
+        String testfirstSentence = "That's not right ";
+        int firstNumbertest = 5;
+        int secondNumbertest = 6;
+
+        boolean test = true;
+        boolean results = methodDrills.checkForTruth("That's not right ",5,6);
+
+        assertEquals(test,results,"This should be true.");
+    }
 }
