@@ -8,7 +8,7 @@ public class MethodDrills {
         return sentence;
     }
 
-    private int giveNumber(){
+    public int giveNumber(){
         return 5;
     }
 

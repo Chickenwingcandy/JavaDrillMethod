@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
@@ -23,6 +24,20 @@ class MethodDrillsTest {
         assertEquals((Object) testAnswer,methodDrills.giveString(), "They should be the same.");
     }
 
+    @Test
+    @DisplayName("Will return a number")
+    void giveNumberTest(){
+        int testNumber = 5;
+        assertEquals(testNumber, methodDrills.giveNumber(),"These should match");
+    }
+
+    @Test
+    @DisplayName("This will return an int array")
+    void getNumberArrayTest(){
+        int numberArrayTest[] = {2,3,4};
+        int result[]=  methodDrills.getNumberArray();
+        Assert.assertArrayEquals(numberArrayTest,result);
+    }
 
 
 }
