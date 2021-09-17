@@ -48,5 +48,19 @@ public class MethodDrills {
         return firstSentence + " " + secondSentence;
     }
 
+    private boolean checkForTruth(String firstSentence, int firstNumber, int secondNumber){
+
+        firstSentence = "That's not right ";
+        firstNumber = 5;
+        secondNumber = 6;
+
+        if (firstNumber != secondNumber){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
 
 }
