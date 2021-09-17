@@ -4,7 +4,8 @@ public class MethodDrills {
     private int numberInput = 16;
 
     public String giveString(){
-        return "Please don't give the answer. ";
+        String sentence = "Please don't give the answer.";
+        return sentence;
     }
 
     private int giveNumber(){
