@@ -26,11 +26,11 @@ public class MethodDrills {
         return "This is just to write a private method";
     }
 
-    public boolean trueOrfalse(){
+    public boolean trueOrFalse(){
         return true;
     }
 
-    
+
 
 
 
