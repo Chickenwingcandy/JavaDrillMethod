@@ -97,11 +97,11 @@ class MethodDrillsTest {
     }
 
     @Test
-    void returnAnumber() {
+    void returnANumber() {
         int numberInputTest = 5;
 
         int test = numberInputTest;
-        int result = methodDrills.returnAnumber(numberInputTest);
+        int result = methodDrills.returnANumber(numberInputTest);
 
         assertEquals(test,result, "These should return a number.");
     }
@@ -116,4 +116,27 @@ class MethodDrillsTest {
 
         assertEquals(test,result, "These should both equal five.");
     }
+
+
+    @Test
+    void oneInputOneOutput() {
+        String sentenceTest = "AAA";
+
+        String test = sentenceTest;
+        String result = methodDrills.oneInputOneOutput(sentenceTest);
+
+        assertEquals((Object) test,result, "They should match.");
+    }
+
+    @Test
+    void addTwoNumbers() {
+        int firstNumTest = 5;
+        int secondNumTest = 6;
+
+        int test = 11;
+        int result = methodDrills.addTwoNumbers(firstNumTest, secondNumTest);
+
+        assertEquals(test,result, "they should both equal 11.");
+    }
+
 }

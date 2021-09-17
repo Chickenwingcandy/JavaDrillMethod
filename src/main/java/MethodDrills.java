@@ -64,12 +64,24 @@ public class MethodDrills {
 //        }
     }
 
-    public int returnAnumber(int numberInput){
+    public int returnANumber(int numberInput){
         return numberInput;
     }
 
     public int returnNumberProvidedByParameter(int numberInput){
         return numberInput;
+    }
+
+    public String oneInputOneOutput(String sentence){
+        return sentence;
+    }
+
+    public int addTwoNumbers(int firstNum, int secondNum){
+        return firstNum + secondNum;
+    }
+
+    public void useADiffMethod(){
+        oneInputOneOutput("Hello");
     }
 
 }
