@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+
 
 class MethodDrillsTest {
 
@@ -44,7 +44,7 @@ class MethodDrillsTest {
         String test = "This is just to write a public method";
         String result = methodDrills.sentence();
 
-        assertEquals((Object) test,result, "Should equal each other");
+        assertEquals(test,result, "Should equal each other");
     }
 
     @Test

@@ -1,12 +1,10 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Assert;
+
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+
 
 class PersonTest {
 
@@ -17,13 +15,18 @@ class PersonTest {
         person = new Person();
     }
 
+
     @Test
-    void printName() {
-        String name = "Gertrude";
+    void personName() {
 
-        String test = "Gertrude";
-        String result = person.printName();
+        person.setName("Gabriel");
 
+        String nameTest = "Gabriel";
+        String result = person.getName();
+
+        assertEquals(nameTest, result, "this is gonna match.");
 
     }
+
+
 }

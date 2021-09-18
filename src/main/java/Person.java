@@ -3,16 +3,19 @@ public class Person {
     private String name;
 
     public String getName(){
+
         return name;
     }
 
-    public void setName(String newName){
-        this.name = newName;
+    public void setName(String name){
+        this.name = name;
+
     }
 
-    public String printName(){
+    public void printName(){
         System.out.println(getName());
-        return name;
     }
+
+
 
 }
