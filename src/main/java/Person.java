@@ -12,8 +12,14 @@ public class Person {
 
     }
 
-    public void printName(){
+    public String manageName(String name){
+
+        this.name = name;
+
+        String newName = getName();
         System.out.println(getName());
+
+        return newName;
     }
 
 

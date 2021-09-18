@@ -28,5 +28,14 @@ class PersonTest {
 
     }
 
+    @Test
+    void manageNameTest(){
+
+        String nameTest = "Joni";
+        String result = person.manageName("Joni");
+
+        assertEquals(nameTest, result, "This should fail.");
+    }
+
 
 }
