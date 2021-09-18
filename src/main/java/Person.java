@@ -23,5 +23,15 @@ public class Person {
     }
 
 
+    public String validateNameLength(String name){
 
+        if (name.length() > 5){
+                return "Your name is too long, I will call you Jeff.";
+            }
+        else{
+            return name;
+        }
+    }
+
+    
 }

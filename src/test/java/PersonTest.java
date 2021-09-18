@@ -38,4 +38,21 @@ class PersonTest {
     }
 
 
+    @Test
+    void validateNameLength() {
+
+        String nameTest = "Jhon";
+        String result = person.validateNameLength("Jhon");
+
+        assertEquals(nameTest, result, "This should return persons name");
+    }
+
+    @Test
+    void validateNameOverFive(){
+
+        String nametest = "Your name is too long, I will call you Jeff.";
+        String result = person.validateNameLength("Garrett");
+
+        assertEquals(nametest, result, "This should return Jeff sentence.");
+    }
 }
