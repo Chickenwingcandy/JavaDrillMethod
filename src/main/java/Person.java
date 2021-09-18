@@ -1,4 +1,5 @@
 public class Person {
+
     private String name;
 
     public String getName(){
@@ -7,6 +8,11 @@ public class Person {
 
     public void setName(String newName){
         this.name = newName;
+    }
+
+    public String printName(){
+        System.out.println(getName());
+        return name;
     }
 
 }
