@@ -55,4 +55,22 @@ class PersonTest {
 
         assertEquals(nametest, result, "This should return Jeff sentence.");
     }
+
+    @Test
+    void validateCapitalizationTest() {
+
+        String nameTest = "Someone didn’t care enough about you to type your name correctly. Sorry.";
+        String result = person.validateCapitalization("adam");
+
+        assertEquals(nameTest,result, "This should return the cap sentence.");
+    }
+
+    @Test
+    void validateCapitalizationCapTest(){
+
+        String nameTest = "Stanley";
+        String result = person.validateCapitalization("Stanley");
+
+        assertEquals(nameTest, result, "This should return the name.");
+    }
 }
