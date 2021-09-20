@@ -59,11 +59,12 @@ class PersonTest {
     @Test
     void validateCapitalizationTest() {
 
-        String nameTest = "Someone didn’t care enough about you to type your name correctly. Sorry.";
+        String nameTest = "Someone didn't care enough about you to type your name correctly. Sorry." + "Adam";
         String result = person.validateCapitalization("adam");
 
         assertEquals(nameTest,result, "This should return the cap sentence.");
     }
+
 
     @Test
     void validateCapitalizationCapTest(){
@@ -73,4 +74,5 @@ class PersonTest {
 
         assertEquals(nameTest, result, "This should return the name.");
     }
+
 }

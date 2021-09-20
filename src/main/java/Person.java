@@ -37,13 +37,27 @@ public class Person {
 
     public String validateCapitalization(String name){
 
+        char[] UppercaseName = new char [name.length()];
+
+
         if(name.equals(name.toLowerCase())){
-            return "Someone didn’t care enough about you to type your name correctly. Sorry.";
+            System.out.println(name);
+
+            String firstLetter = name.substring(0,1).toUpperCase();
+            String restOfName = name.substring(1);
+            String capFirstName = firstLetter + restOfName;
+
+
+            return "Someone didn't care enough about you to type your name correctly. Sorry." + capFirstName;
         }
+
         else {
+            
             return name;
         }
     }
+
+
 
     
 }
