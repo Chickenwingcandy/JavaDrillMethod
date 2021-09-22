@@ -4,6 +4,16 @@ public class Person {
 
     private String name;
 
+    private int age;
+
+    public int getAge(){
+        return age;
+    }
+
+    public void setAge(int age){
+        this.age = age;
+    }
+
     public String getName(){
 
         return name;
@@ -24,6 +34,15 @@ public class Person {
         return newName;
     }
 
+    public String createAPerson(String name, int age){
+
+        String person;
+
+        person = name + age;
+
+        return person;
+    }
+
 
     public String validateNameLength(String name){
 
@@ -37,9 +56,6 @@ public class Person {
 
     public String validateCapitalization(String name){
 
-        char[] UppercaseName = new char [name.length()];
-
-
         if(name.equals(name.toLowerCase())){
             System.out.println(name);
 
@@ -52,12 +68,9 @@ public class Person {
         }
 
         else {
-            
+
             return name;
         }
     }
 
-
-
-    
 }

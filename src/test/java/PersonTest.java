@@ -75,4 +75,14 @@ class PersonTest {
         assertEquals(nameTest, result, "This should return the name.");
     }
 
+    @Test
+    void createAPerson() {
+
+        String personInfo = "Tim" + 36;
+
+        String results = person.createAPerson("Tim", 36);
+
+        assertEquals(personInfo, results, "This should make a person.");
+
+    }
 }
