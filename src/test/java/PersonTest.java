@@ -78,7 +78,7 @@ class PersonTest {
     }
 
     @Test
-    void createAPerson() {
+    void createAPersonTest() {
 
         String personInfo = "Tim" + 36;
 
@@ -90,7 +90,7 @@ class PersonTest {
 
 
     @Test
-    void showAge() {
+    void showAgeTest() {
 
         ArrayList<Person> souls = new ArrayList<Person>(4);
 
@@ -112,5 +112,47 @@ class PersonTest {
         assertArrayEquals(expected , results, "Shit should work");
     }
 
+    @Test
+    void hasANameFalseTest() {
+       Person forSale18 = new Person("ForSale18", 30);
+
+       boolean expected = false;
+
+       boolean results = person.hasAName(forSale18);
+
+       assertEquals(expected,results,"This should return false");
+    }
+
+    @Test
+    void isNamedTest(){
+        Person bob = new Person("Bob", 652);
+
+        boolean expected = true;
+
+        boolean results = person.isNamed(bob);
+    }
+
+    @Test
+    void namedWhatFalseTest() {
+        Person forSale18 = new Person("ForSale18", 30);
+
+        boolean expected = false;
+
+        boolean result = person.namedWhat(forSale18);
+
+        assertEquals(expected,result);
+    }
+
+    @Test
+    void namedWhatTrueTest() {
+        Person forSale18 = new Person("null", 30);
+
+        boolean expected = true;
+
+        boolean result = person.namedWhat(forSale18);
+
+        assertEquals(expected,result);
+
+    }
 
 }
