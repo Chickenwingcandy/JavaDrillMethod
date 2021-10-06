@@ -125,4 +125,8 @@ public class Person {
             return false;
         }
     }
+
+    public boolean completedMyMethodDrills(){
+        return true;
+    }
 }

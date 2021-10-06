@@ -155,4 +155,13 @@ class PersonTest {
 
     }
 
+    @Test
+    void completedMyMethodDrills() {
+
+        boolean expected = true;
+
+        boolean result = person.completedMyMethodDrills();
+
+        assertEquals(expected,result);
+    }
 }
