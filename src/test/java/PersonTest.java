@@ -1,9 +1,11 @@
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 
 
 class PersonTest {
@@ -12,7 +14,7 @@ class PersonTest {
 
     @BeforeEach
     void setUp(){
-        person = new Person();
+        person = new Person ();
     }
 
 
@@ -85,4 +87,30 @@ class PersonTest {
         assertEquals(personInfo, results, "This should make a person.");
 
     }
+
+
+    @Test
+    void showAge() {
+
+        ArrayList<Person> souls = new ArrayList<Person>(4);
+
+
+        Person tim = new Person("Tim", 42);
+        Person mike = new Person ("Mike", 63);
+        Person jan = new Person ("Jan", 52);
+        Person susan = new Person ("Susan", 25);
+
+        souls.add(tim);
+        souls.add(mike);
+        souls.add(jan);
+        souls.add(susan);
+
+        int [] expected = {42,63,52,25};
+
+        int [] results = person.showAge(souls);
+
+        assertArrayEquals(expected , results, "Shit should work");
+    }
+
+
 }

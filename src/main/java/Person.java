@@ -1,6 +1,19 @@
-import java.util.Locale;
+import java.util.ArrayList;
 
-public class Person {
+public class Person  {
+
+    public Person(){}
+
+    public Person  (String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    ArrayList<Person> souls = new ArrayList<Person>(4);
+
+    public String toString(){
+        return getName() + " " + getAge();
+    }
 
     private String name;
 
@@ -44,6 +57,7 @@ public class Person {
     }
 
 
+
     public String validateNameLength(String name){
 
         if (name.length() > 5){
@@ -72,5 +86,22 @@ public class Person {
             return name;
         }
     }
+
+    public int [] showAge(ArrayList <Person> souls){
+
+        int expected [] = new int[4];
+
+        for (int i = 0; i < souls.size(); i++){
+
+           expected [i] = souls.get(i).getAge();
+
+           System.out.println(expected[i]);
+
+        }
+
+        return expected;
+    }
+
+
 
 }

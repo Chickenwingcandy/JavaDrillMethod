@@ -1,34 +1,31 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
 
         Person person = new Person();
 
-        person.setName("Colt");
+        Person tim = new Person("Tim", 42);
+        Person mike = new Person ("Mike", 63);
+        Person jan = new Person ("Jan", 52);
+        Person susan = new Person ("Susan", 25);
 
-        person.setAge(42);
 
-        person.getName();
+        System.out.println(tim);
 
-        person.getAge();
+        ArrayList<Person> people = new ArrayList<Person>(4);
 
-        System.out.println( person.getName() + " " + person.getAge());
+        people.add(tim);
+        people.add(mike);
+        people.add(jan);
+        people.add(susan);
 
-        String Tim = person.createAPerson("Tim ", 36);
-        String PunchLine = person.createAPerson("PunchLine ", 620);
-        String Jan = person.createAPerson("Jan ", 27);
-        String Susan = person.createAPerson("Susan ", 96);
+        System.out.println(people);
 
-        System.out.println(Tim);
+        person.showAge(people);
 
-        ArrayList<String> people = new ArrayList<String>(4);
 
-        people.add(Tim);
-        people.add(PunchLine);
-        people.add(Jan);
-        people.add(Susan);
 
-        
     }
 }
